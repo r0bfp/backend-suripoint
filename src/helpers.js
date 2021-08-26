@@ -93,7 +93,7 @@ function helpers() {
     }
 
     function calculateMonth(m1, m2, operation) {
-        console.log('******************************')
+        console.log('*******************************')
         console.log('mes inicial', m1)
         console.log('quantidade subtraida', m2)
 
