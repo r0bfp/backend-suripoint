@@ -274,9 +274,9 @@ async function createCore(){
         finalComp[2] = finalComp[2] - help.calculateMonth(finalComp[1], delay, 'sub').yearsElapsedy
 
         console.log('==========================')
-
-        // console.log('initialComp:',initialComp);
-        // console.log('finalComp:  ',finalComp);
+        console.log('initialComp:',initialComp);
+        console.log('finalComp:  ',finalComp);
+        
 
         if(period.includes("12")){
             initialComp[1] = help.calculateMonth(initialComp[1], 11, 'sub').currentMonth
