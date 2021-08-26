@@ -1,0 +1,13 @@
+{
+  "steps": [
+   {
+       "name": "gcr.io/suribots/backend-suripoint",
+       "args": [
+         "build",
+         "-t",
+         "gcr.io/suribots/backend-suripoint",
+         "."
+        ]
+    }
+    ]
+  }

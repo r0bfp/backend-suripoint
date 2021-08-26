@@ -1,0 +1,49 @@
+<p:sp>
+    <p:nvSpPr>
+        <p:cNvPr id="6" name="TextBox 3">
+            <a:extLst>
+                <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
+                    <a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{BD7AFC16-D28A-4559-8C96-4935F42035EF}"/>
+                </a:ext>
+            </a:extLst>
+        </p:cNvPr>
+        <p:cNvSpPr txBox="1"/>
+        <p:nvPr/>
+    </p:nvSpPr>
+    <p:spPr>
+        <a:xfrm>
+            <a:off x="8413761" y="5283035"/>
+            <a:ext cx="1765398" cy="529139"/>
+        </a:xfrm>
+        <a:prstGeom prst="rect">
+            <a:avLst/>
+        </a:prstGeom>
+        <a:noFill/>
+    </p:spPr>
+    <p:txBody>
+        <a:bodyPr wrap="none" lIns="89937" tIns="44968" rIns="89937" bIns="44968" rtlCol="0">
+            <a:spAutoFit/>
+        </a:bodyPr>
+        <a:lstStyle/>
+        <a:p>
+            <a:pPr algn="ctr"/>
+            <a:r>
+                <a:rPr lang="pt-BR" sz="1424" b="1" dirty="0">
+                    <a:latin typeface="Avenir Next Demi Bold"/>
+                    <a:cs typeface="Avenir Next Demi Bold"/>
+                </a:rPr>
+                <a:t>Janeiro /2021</a:t>
+            </a:r>
+        </a:p>
+        <a:p>
+            <a:pPr algn="ctr"/>
+            <a:r>
+                <a:rPr lang="pt-BR" sz="1424" b="1" dirty="0">
+                    <a:latin typeface="Avenir Next Demi Bold"/>
+                    <a:cs typeface="Avenir Next Demi Bold"/>
+                </a:rPr>
+                <a:t>(Relatório Mensal)</a:t>
+            </a:r>
+        </a:p>
+    </p:txBody>
+</p:sp>
