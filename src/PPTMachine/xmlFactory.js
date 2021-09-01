@@ -77,17 +77,17 @@ async function XML(xmlData){
     async function changeDescription(newDescription, brokerTemplate, secondDescription) {
         const relativeParsedXMLTemplate = await parser.parseStringPromise(await fsPromisses.readFile(path.resolve(__dirname, 'XMLtemplates', `${brokerTemplate}.xml`)));
 
-        newDescription = utf8.encode(newDescription);
+        // newDescription = utf8.encode(newDescription);
 
         if(brokerTemplate.includes('sciath')){
             if(brokerTemplate.split('_')[1] == 'pt'){
-                relativeParsedXMLTemplate['p:sp']['p:txBody'][0]['a:p'][2]['a:r'][0]['a:t'][0] = newDescription;
+                relativeParsedXMLTemplate['p:sp']['p:txBody'][0]['a:p'][2]['a:r'][0]['a:t'][0] = utf8.encode(newDescription);
             }else{
-                relativeParsedXMLTemplate['p:sp']['p:txBody'][0]['a:p'][1]['a:r'][0]['a:t'][0] = newDescription;
+                relativeParsedXMLTemplate['p:sp']['p:txBody'][0]['a:p'][2]['a:r'][0]['a:t'][0] = utf8.encode(newDescription);
             }
         }else if (brokerTemplate.includes('emf')){
-            relativeParsedXMLTemplate['p:sp']['p:txBody'][0]['a:p'][0]['a:r'][0]['a:t'][0] = newDescription;
-            relativeParsedXMLTemplate['p:sp']['p:txBody'][0]['a:p'][1]['a:r'][0]['a:t'][0] = `(${secondDescription})`;
+            relativeParsedXMLTemplate['p:sp']['p:txBody'][0]['a:p'][0]['a:r'][0]['a:t'][0] = utf8.encode(newDescription);
+            relativeParsedXMLTemplate['p:sp']['p:txBody'][0]['a:p'][1]['a:r'][0]['a:t'][0] = utf8.encode(`(${secondDescription})`);
         }else{
             relativeParsedXMLTemplate['p:sp']['p:txBody'][0]['a:p'][0]['a:r'][0]['a:t'][0] = newDescription;
         }

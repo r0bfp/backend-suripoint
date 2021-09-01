@@ -262,10 +262,10 @@ async function createCore(){
         const contractStart = data.contract_term.split('-').map((e) => parseInt(e));
         let startCount      = data.start_count.split('-').map((e) => parseInt(e));
 
-        console.log('delay:        ', delay);
-        console.log('period:       ', period);
-        console.log('contractStart:', contractStart);
-        console.log('startCount:   ', startCount);
+        // console.log('delay:        ', delay);
+        // console.log('period:       ', period);
+        // console.log('contractStart:', contractStart);
+        // console.log('startCount:   ', startCount);
 
         initialComp[1] = help.calculateMonth(initialComp[1], delay, 'sub').currentMonth
         initialComp[2] = initialComp[2] - help.calculateMonth(initialComp[1], delay, 'sub').yearsElapsedy
@@ -273,9 +273,9 @@ async function createCore(){
         finalComp[1] = help.calculateMonth(finalComp[1], delay, 'sub').currentMonth
         finalComp[2] = finalComp[2] - help.calculateMonth(finalComp[1], delay, 'sub').yearsElapsedy
 
-        console.log('==========================')
-        console.log('initialComp:',initialComp);
-        console.log('finalComp:  ',finalComp);
+        // console.log('==========================')
+        // console.log('initialComp:',initialComp);
+        // console.log('finalComp:  ',finalComp);
         
 
         if(period.includes("12")){
