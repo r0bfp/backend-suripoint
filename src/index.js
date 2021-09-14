@@ -16,12 +16,12 @@ const port = process.env.PORT || 3000;
 
 dotenv.config({ path: path.resolve(__dirname, '.env') });
 
-// app.use((req, res, next) => {
-//     res.header("Access-Control-Allow-Origin", "*");
-//     res.header("Access-Control-Allow-Methods", "GET, PUT, POST, DELETE");
-//     app.use(cors());
-//     next();
-// })
+app.use((req, res, next) => {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Methods", "GET, PUT, POST, DELETE");
+    app.use(cors());
+    next();
+})
 
 app.use(express.static(path.resolve(__dirname, 'public'))); 
 app.use(express.json());
